@@ -16,6 +16,47 @@
         </div>
     </header>
 
+    <main class="w-full max-w-4xl mx-auto px-5 py-10">
+        <div class="space-y-4 md:flex md:items-start md:space-x-10">
+            <!-- form -->
+            <div class="w-full md:w-1/2">
+                <h2 class="mb-2 font-medium text-lg">Kontakt qo'shish</h2>
+                <form id="form">
+                    <div class="space-y-3 mb-6">
+                        <!-- Ism -->
+                        <input id="name-input" class="w-full rounded px-4 py-1 border focus:outline-blue-300" type="text" name="name" placeholder="Ismi" autocomplete="off" required>
+                        <!-- Qarindoshligi -->
+                        <input id="rel-input" class="w-full rounded px-4 py-1 border focus:outline-blue-300" type="text" name="realtionship" placeholder="Qarindoshligi" autocomplete="off" list="relationship-list" required>
+                        <datalist id="relationship-list">
+                            <option value="Otam">
+                            <option value="Onam">
+                            <option value="Akam">
+                            <option value="Opam">
+                            <option value="Singlim">
+                            <option value="Ukam">
+                            <option value="Sinfdosh">
+                            <option value="Kursdosh">
+                            <option value="Direktor">
+                            <option value="Qo'shni">
+                            <option value="Do'stim">
+                            <option value="">
+                        </datalist>
+                        <!-- Tel -->
+                        <input id="tel-input" class="w-full rounded px-4 py-1 border focus:outline-blue-300" type="tel" placeholder="Telefon raqami" autocomplete="off" required>
+                    </div>
+
+                    <button class="w-full bg-blue-500 py-1.5 text-white rounded transition hover:bg-blue-600" type="submit">Saqlash</button>
+                </form>
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="mb-2 font-medium text-lg md:text-center">Kontaktlar</h2>
+                <ul id="list" class="space-y-3">
+                </ul>
+            </div>
+        </div>
+    </main>
     
+
+    <script src="app.js"></script>
 </body>
 </html>
